@@ -1,0 +1,41 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="VisualElement" style="flex-direction: row; margin-top: 14px;">
+        <ui:VisualElement name="major-version" style="width: 35px;">
+            <ui:Label text="Major" display-tooltip-when-elided="true" style="-unity-font-style: bold;" />
+            <ui:Button text="+" display-tooltip-when-elided="true" name="major-up" style="width: auto;" />
+            <ui:VisualElement style="flex-direction: row; width: 100%;">
+                <ui:TextField picking-mode="Ignore" value="0" name="major-text" style="-unity-text-align: middle-center; width: 90%;" />
+                <ui:Label text="." display-tooltip-when-elided="true" style="-unity-text-align: lower-left;" />
+            </ui:VisualElement>
+            <ui:Button text="-" display-tooltip-when-elided="true" name="major-down" style="width: auto;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="minor-version" style="width: 35px; margin-left: 13px;">
+            <ui:Label text="Minor" display-tooltip-when-elided="true" style="-unity-font-style: bold;" />
+            <ui:Button text="+" display-tooltip-when-elided="true" name="minor-up" style="width: auto;" />
+            <ui:VisualElement style="flex-direction: row;">
+                <ui:TextField picking-mode="Ignore" value="0" name="minor-text" style="-unity-text-align: middle-center; width: 90%;" />
+                <ui:Label text="." display-tooltip-when-elided="true" style="-unity-text-align: lower-left;" />
+            </ui:VisualElement>
+            <ui:Button text="-" display-tooltip-when-elided="true" name="minor-down" style="width: auto;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="patch-version" style="width: 35px; margin-left: 13px;">
+            <ui:Label text="Patch" display-tooltip-when-elided="true" style="-unity-font-style: bold;" />
+            <ui:Button text="+" display-tooltip-when-elided="true" name="patch-up" style="width: auto;" />
+            <ui:VisualElement style="flex-direction: row;">
+                <ui:TextField picking-mode="Ignore" value="0" name="patch-text" style="-unity-text-align: middle-center; width: 90%;" />
+                <ui:Label text="." display-tooltip-when-elided="true" style="-unity-text-align: lower-left;" />
+            </ui:VisualElement>
+            <ui:Button text="-" display-tooltip-when-elided="true" name="patch-down" style="width: auto;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="build-version" style="width: 55px; margin-left: 13px;">
+            <ui:Label text="Build" display-tooltip-when-elided="true" style="-unity-font-style: bold;" />
+            <ui:TextField picking-mode="Ignore" value="0" name="build-text" readonly="true" style="-unity-text-align: middle-center; width: 48px; margin-top: 21px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:Toggle label="Build is a Pre-Release?" value="true" name="pre-release" style="margin-top: 10px;" />
+    <ui:Button text="Start Build" display-tooltip-when-elided="true" name="build-button" />
+    <ui:Label text="Major - The major version of a game should only be incremeented rarely. Doing this will reset the minor and patch versions and is good for complete overhauls.\nThink: A new Season of Fortnite." display-tooltip-when-elided="false" enable-rich-text="true" name="majory-key" style="margin-top: 15px; margin-left: 6px; flex-wrap: wrap; white-space: normal; align-items: auto; width: 326px; -unity-font-style: normal;" />
+    <ui:Label text="Minor - The minor version is primarily used for adding new features or content into an existing game and will reset the patch version.\nThink: Adding a new type of gun in Fortnite." display-tooltip-when-elided="false" enable-rich-text="true" name="minor-key" style="margin-top: 15px; margin-left: 6px; flex-wrap: wrap; white-space: normal; align-items: auto; width: 326px; -unity-font-style: normal;" />
+    <ui:Label text="Patch - The patch version of a game is used for hotfixes and tweaks to existing features.\nThink: Tweaking gun damage in Fortnite." display-tooltip-when-elided="false" enable-rich-text="true" name="patch-key" style="margin-top: 15px; margin-left: 6px; flex-wrap: wrap; white-space: normal; align-items: auto; width: 326px; -unity-font-style: normal;" />
+    <ui:Label text="Build - The build version is an auto-incrementing number that insures that no two builds are the same." display-tooltip-when-elided="false" enable-rich-text="true" name="build-key" style="margin-top: 15px; margin-left: 6px; flex-wrap: wrap; white-space: normal; align-items: auto; width: 326px; -unity-font-style: normal;" />
+</ui:UXML>
