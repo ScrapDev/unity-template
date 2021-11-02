@@ -1,3 +1,4 @@
+#if BUILDTOOL_EXISTS
 using SuperUnityBuild.BuildTool;
 using System.IO;
 
@@ -13,3 +14,4 @@ public class GetVersion : BuildAction, IPreBuildAction
         File.WriteAllText(Path.GetFullPath(file), version);
     }
 }
+#endif

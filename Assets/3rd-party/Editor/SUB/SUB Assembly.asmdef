@@ -1,0 +1,22 @@
+{
+    "name": "SUBAssembly",
+    "rootNamespace": "",
+    "references": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.github.superunitybuild.buildtool",
+            "expression": "3.0.0",
+            "define": "BUILDTOOL_EXISTS"
+        }
+    ],
+    "noEngineReferences": false
+}
